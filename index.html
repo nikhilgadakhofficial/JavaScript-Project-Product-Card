@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        width: 900px;
+        height: 1000px;
+        display: block;
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .card-first {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .main-card {
+        height: 400px;
+        width: 380px;
+        margin: 5px;
+      }
+      .h1 {
+        text-align: center;
+      }
+      .img-card {
+        display: block;
+        margin: 10px 20px;
+      }
+      .img {
+        margin: 10px;
+        cursor: pointer;
+      }
+      .titile {
+        text-align: center;
+        font-family: cursive;
+        font-weight: 500;
+      }
+      .hading {
+        text-align: center;
+        font-weight: 700;
+        color: #26a541;
+      }
+      .titile-to {
+        text-align: center;
+        font-family: cursive;
+        font-weight: 500;
+        margin: 10px;
+      }
+      .input-box {
+        width: 50px;
+        height: 40px;
+        text-align: center;
+        margin: 10px;
+        font-weight: 900;
+      }
+      .btn {
+        display: block;
+        margin: 30px auto;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        font-weight: 900;
+      }
+      .btn:hover {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+      .qty {
+        display: block;
+        margin: 8px auto;
+        border: 1px solid gray;
+        width: 75px;
+        padding: 7px;
+        height: 20px;
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+      }
+      .plus {
+        margin-left: 180px;
+      }
+      .minus {
+        margin-left: 185px;
+      }
+      .bill {
+        width: 900px;
+        height: 300px;
+        margin-top: 110px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .color{
+        color: #26a541;
+        margin-left:20px ;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="card">
+        <div class="card-first">
+          <div class="main-card">
+            <img
+              id="imgOne"
+              src="https://thetaffy.in/cdn/shop/files/100323-001_375x_crop_center.jpg?v=1707136058"
+            />
+
+            <div class="img-card">
+              <img
+                src="https://thetaffy.in/cdn/shop/files/100323-002_375x_crop_center.jpg?v=1707136058"
+                id="1"
+                height="80px"
+                class="img"
+              />
+
+              <img
+                src="https://thetaffy.in/cdn/shop/files/100323-003_375x_crop_center.jpg?v=1707136058"
+                id="2"
+                height="80px"
+                class="img"
+              />
+
+              <img
+                src="https://thetaffy.in/cdn/shop/files/100323-004_375x_crop_center.jpg?v=1707136059"
+                id="3"
+                height="80px"
+                class="img"
+              />
+            </div>
+          </div>
+
+          <div class="main-card">
+            <h1 class="titile">TAFFYKIDS</h1>
+
+            <h3 class="titile">TROPICAL PRINTED HALF SLEEVES SHIRT- GREEN</h3>
+
+            <h3 class="titile">Product Detail</h3>
+
+            <h4 class="titile">
+              Taffykids tropical printed half sleeves shirt- Green
+            </h4>
+
+            <h2 class="hading">Special price</h2>
+            <h2 class="titile-to">
+              <span>₹2500</span
+              ><span style="font-weight: 1000; font-size: 20px; margin: 10px">
+                <del>₹2000</del></span
+              >
+              <span style="color: #26a541; font-weight: 800">50% Off</span>
+            </h2>
+
+            <h2 class="titile">Size</h2>
+
+            <div id="Nikhil" class="input">
+              <input class="input-box" placeholder="S" id="s" type="text" />
+              <input class="input-box" placeholder="M" id="m" type="text" />
+              <input class="input-box" placeholder="L" id="l" type="text" />
+              <input class="input-box" placeholder="XL" id="xl" type="text" />
+            </div>
+
+            <h4 class="titile">Quantity</h4>
+            <h1 class="qty">
+              <span
+                style="font-weight: bold; cursor: pointer; margin-left: -10px"
+                id="plus"
+                >+</span
+              >
+              <span id="element">1</span>
+              <span
+                style="
+                  font-weight: bold;
+                  cursor: pointer;
+                  text-align: center;
+                  margin-left: 5px;
+                "
+                id="minus"
+                >-</span
+              >
+            </h1>
+
+            
+          </div>
+        </div>
+
+        <div class="bill">
+          <div>
+            <img src="Shopping bag-rafiki.png" height="350px" />
+          </div>
+
+          <div>
+            <h2 class="titile">Product Details</h2>
+
+            <h4 class="titile-to" id="MRP">MRP Of Product -> <span class="color"></span></h4>
+
+            <h4 class="titile-to" id="Discount">Your Discount -> <span  class="color"></span></h4>
+
+            <h4 class="titile" id="Size">Your Size -> <span  class="color"></span></h4>
+
+            <h4 class="titile-to" id="Total">Total Bill -><span  class="color"></span></h4>
+
+            <h4 class="titile-to" id="Delivered">
+              Your Product Delivered On -> <span  class="color"></span>
+            </h4>
+
+            <button class="btn" type="button">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const dermentelement = document
+        .getElementById("plus")
+        .addEventListener("click", () => {
+          let quantity = document.getElementById("element");
+
+          const rate = 2500;
+
+          const bill = rate * quantity.innerText;
+
+          const discount = (bill * 15) / 100;
+
+          const withdiscount = bill - discount;
+
+          const Discount = document.getElementById("Discount");
+
+          Discount.innerHTML = `<h4 class="titile-to" id="Discount">
+            Your Discount <span  class="color">${discount}</span>
+          </h4>`;
+
+          const Total = document.getElementById("Total");
+          Total.innerHTML = `   <h4 class="titile-to" id="Total">Total Bill <span  class="color">${withdiscount}</span></h4>`;
+
+          const Size = document.getElementById("s").value;
+
+          if (Size === "s") {
+            const n = (document.getElementById(
+              "Size"
+            ).innerHTML = `<h4 class="titile" id="Size">Your Size <span  class="color">"${Size}"</span> </h4>`);
+          }
+
+          const SizeTow = document.getElementById("m").value;
+
+          if (SizeTow === "m") {
+            const n = (document.getElementById(
+              "Size"
+            ).innerHTML = `<h4 class="titile" id="Size">Your Size <span  class="color">"${SizeTow}"</span> </h4>`);
+          }
+
+          const SizeThree = document.getElementById("l").value;
+
+          if (SizeThree === "l") {
+            const n = (document.getElementById(
+              "Size"
+            ).innerHTML = `<h4 class="titile" id="Size">Your Size <span  class="color">"${SizeThree}"</span> </h4>`);
+          }
+
+          const SizeFive = document.getElementById("xl").value;
+
+          if (SizeFive === "xl") {
+            const n = (document.getElementById(
+              "Size"
+            ).innerHTML = `<h4 class="titile" id="Size">Your Size <span  class="color">" ${SizeFive}"</span> </h4>`);
+          }
+
+          let myDate = new Date();
+
+         //  console.log(myDate.toDateString());
+
+         document.getElementById('Delivered').innerHTML  = ` <h4 class="titile-to" id="Delivered">
+              Your Product Delivered On <span  class="color"> ${myDate.toDateString()}</span>
+            </h4>`
+
+            document.getElementById('MRP').innerHTML = `  <h4 class="titile-to">MRP Of Product -> <span class="color">₹2500</span></h4>`
+
+          if (quantity.innerText < 10) {
+            quantity.innerText++;
+          } else {
+            alert("Only 10 Buyy");
+          }
+        });
+
+      const dermentelementTwo = document
+        .getElementById("minus")
+        .addEventListener("click", () => {
+          const quantityTwo = document.getElementById("element");
+
+          if (quantityTwo.innerText > 1) {
+            quantityTwo.innerText--;
+          } else {
+            alert("Do Not Buyy");
+          }
+        });
+
+      document.getElementById("1").addEventListener("click", () => {
+        document.getElementById("imgOne").src =
+          "https://thetaffy.in/cdn/shop/files/100323-002_375x_crop_center.jpg?v=1707136058";
+      });
+
+      document.getElementById("2").addEventListener("click", () => {
+        document.getElementById("imgOne").src =
+          "https://thetaffy.in/cdn/shop/files/100323-003_375x_crop_center.jpg?v=1707136058";
+      });
+
+      document.getElementById("3").addEventListener("click", () => {
+        document.getElementById("imgOne").src =
+          "https://thetaffy.in/cdn/shop/files/100323-004_375x_crop_center.jpg?v=1707136059";
+      });
+    </script>
+  </body>
+</html>
